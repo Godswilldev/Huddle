@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--pink); }
+  font-weight: 400, 600, 700; }
 
 h1,
 h2,
@@ -28,3 +28,59 @@ h5,
 h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.5rem;
+  border: 2px solid var(--pink);
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: transparent;
+  color: var(--pink); }
+  .btn--white::after {
+    background-color: transparent; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.nav {
+  padding: 3rem; }
+  .nav__logo {
+    width: 90%; }
+  .nav ul {
+    display: flex;
+    justify-content: space-between; }
