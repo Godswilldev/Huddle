@@ -1,11 +1,32 @@
-.nav{
-    padding: 3rem;
-    &__logo{
+.nav {
+
+
+    &__logo {
         width: 90%;
+
+        @include respond(phone) {
+            width: 50%;
+        }
     }
 
-    ul{
+    ul {
+        padding: 5rem 3rem;
         display: flex;
         justify-content: space-between;
+
+        a{
+            @include respond(phone){
+                          margin-left: -5rem;
+
+            }
+        }
+
+        @include respond(phone) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
     }
+
 }

@@ -1,5 +1,9 @@
 .section-intro {
     margin-top: 10rem;
+
+    @include respond(phone){
+        margin-top: 5rem;
+    }
 }
 
 .intro {
@@ -8,15 +12,36 @@
 
     &__img {
         width: 90rem;
+        @include respond(tab-port){
+            width: 70%;
+        }
+        @include respond(phone){
+            width: 60%;
+        }
     }
 
     h1 {
         margin-bottom: 4rem;
+        padding: 0 2.5rem;
+
+        @include respond(phone){
+            padding: 0 1.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+            
+        }
     }
 
     p {
         margin: 0 auto;
         margin-bottom: 4rem;
+        padding: 0 5rem;
+        font-weight: 400;
+
+        @include respond(phone){
+            padding: 0 2rem;
+            
+        }
 
 
     }
@@ -33,8 +58,20 @@
         text-align: center;
         position: relative;
 
+        @include respond(phone){
+            display: flex;
+            flex-direction: column;
+            margin-top: 5rem;
+        }
+
         &--icon{
             display: flex;
+            @include respond(phone){
+               display: inline;
+               width: 5rem;
+               margin-top: 3rem;
+
+            }
         }
 
         .paragraph__secondary{

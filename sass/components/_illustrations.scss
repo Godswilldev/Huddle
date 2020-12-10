@@ -1,69 +1,156 @@
-.section-grow{
+.section-grow {
     margin-top: 10rem;
 }
 
-.svgupper{
+.svgupper {
+
     // background-color: #fff;
-    svg{
+    svg {
         display: block;
     }
 }
 
-.grow{
+.grow {
     background-color: #F6FBFF;
 
-    svg{
+    svg {
         display: block;
+    }
+
+    &__image {
+
+        @include respond(tab-port){
+          
+        }
+        @include respond(phone) {
+            text-align: center;
+        }
     }
 }
 
 
-.growth{
+.growth {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 20rem;
 
-    &__text{
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 40rem;
+    }
+
+    &__text {
         padding: 0 10rem;
 
-        p{
+        @include respond(tab-port){
+          padding: 0 5rem;
+        }
+        @include respond(phone) {
+            padding: 0 5rem;
+            text-align: center;
+        }
+
+
+        p {
             line-height: 1.5;
             margin-top: 2rem;
             padding-right: 15rem;
+
+            @include respond(tab-port){
+                font-size: 2.3rem;
+                padding-right: 5rem;
+            }
+            @include respond(phone) {
+                padding: 0;
+                font-size: 1.8rem;
+            }
         }
     }
 
-    &__image{
+    &__image {
         width: 70%;
         margin-top: 15rem;
+
+        @include respond(tab-port){
+          width: 100%;
+          margin-left: -5rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            width: 60%;
+        }
     }
 }
 
 
 
 
-.section-conversations{
+.section-conversations {
     margin-top: 10rem;
-    
+
 }
 
-.conversations{
+.conversations {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0 10rem;
 
-    &__image{
-        width: 70%;
+    @include respond(tab-port){
+          display: flex;
+          justify-content: space-between;
+          margin: 0 5rem;
     }
 
-    &__text{
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 70%;
+        @include respond(tab-port){
+          width: 90%;
+        }
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__text {
         padding-left: 10rem;
 
-        p{
+        @include respond(tab-port){
+          padding: 0;
+        }
+
+        @include respond(phone) {
+            padding: 0;
+
+        }
+
+        p {
             line-height: 1.5;
             margin-top: 2rem;
+
+            @include respond(tab-port){
+                font-size: 2.3rem;
+                padding: 0;
+            }
+
+            @include respond(phone) {
+                padding: 0 7rem;
+                font-size: 1.8rem;
+
+            }
         }
     }
 }
