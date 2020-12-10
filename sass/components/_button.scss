@@ -39,6 +39,45 @@
             background-color: transparent;
         }
     }
+
+    &--pink {
+        background-color: var(--pink);
+        color: #fff;
+
+        &,
+        &:link,
+        &:visited {
+            padding: 2rem 5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: unset;
+        }
+
+        &::after {
+            background-color: var(--pink);
+        }
+    }
+
+    &--straight{
+        background-color: var(--pink);
+        color: #fff;
+
+        &,
+        &:link,
+        &:visited {
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: unset;
+            border-radius: 5px;
+        }
+
+        
+
+        &::after {
+            background-color: var(--pink);
+        }
+    }
     
     &::after {
         content: "";

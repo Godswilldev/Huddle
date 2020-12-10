@@ -1,0 +1,69 @@
+.section-grow{
+    margin-top: 10rem;
+}
+
+.svgupper{
+    // background-color: #fff;
+    svg{
+        display: block;
+    }
+}
+
+.grow{
+    background-color: #F6FBFF;
+
+    svg{
+        display: block;
+    }
+}
+
+
+.growth{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+
+    &__text{
+        padding: 0 10rem;
+
+        p{
+            line-height: 1.5;
+            margin-top: 2rem;
+            padding-right: 15rem;
+        }
+    }
+
+    &__image{
+        width: 70%;
+        margin-top: 15rem;
+    }
+}
+
+
+
+
+.section-conversations{
+    margin-top: 10rem;
+    
+}
+
+.conversations{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10rem;
+
+    &__image{
+        width: 70%;
+    }
+
+    &__text{
+        padding-left: 10rem;
+
+        p{
+            line-height: 1.5;
+            margin-top: 2rem;
+        }
+    }
+}

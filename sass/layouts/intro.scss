@@ -1,0 +1,51 @@
+.section-intro {
+    margin-top: 10rem;
+}
+
+.intro {
+    text-align: center;
+    margin: 0 auto;
+
+    &__img {
+        width: 90rem;
+    }
+
+    h1 {
+        margin-bottom: 4rem;
+    }
+
+    p {
+        margin: 0 auto;
+        margin-bottom: 4rem;
+
+
+    }
+
+    li {
+        margin-bottom: 6rem;
+    }
+
+
+    &__stats{
+        margin-top: 15rem;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        position: relative;
+
+        &--icon{
+            display: flex;
+        }
+
+        .paragraph__secondary{
+            font-size: 2rem
+        }
+        &--1{
+        
+        }
+
+        &--2{
+           
+        }
+    }
+}
